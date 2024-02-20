@@ -5,6 +5,7 @@ set (CMAKE_CXX_STANDARD 11)
 
 option (BUILD_TESTS "Build tests" OFF)
 
+add_subdirectory (libs)
 add_subdirectory (src)
 
 if (BUILD_TESTS)
@@ -13,4 +14,3 @@ if (BUILD_TESTS)
 endif (BUILD_TESTS)
 
 set (CMAKE_SUPPRESS_REGENERATION true)
-
